@@ -1,0 +1,41 @@
+//4.
+#include <stdio.h>
+
+int main() { //ramswaroop
+    float a, b;
+    int opt;
+
+    // Prompt the user to enter the operator and the numbers
+    printf("Enter the first number: ");
+    scanf("%f", &a);
+    printf("Enter the second number: ");
+    scanf("%f", &b);
+    printf("Enter your operator from the following: \n 1.ADD \n 2.SUBTRACTION \n 3.MULTIPLICATION \n 4.DIVISION\n");
+    printf("Enter only number:");
+    scanf("%d", &opt);
+
+    // Corrected switch statement
+    switch (opt) {
+        case 1:
+            printf("The sum of these numbers is %.2f\n", a + b);
+            break;
+        case 2:
+            printf("The difference of these numbers is %.2f\n", a - b);
+            break;
+        case 3:
+            printf("The multiplication of these numbers is %.2f\n", a * b);
+            break;
+        case 4:
+            if (b != 0) {
+                printf("The division of these numbers is %.2f\n", a / b);
+            } else {
+                printf("Division by zero is not allowed.\n");
+            }
+            break;
+        default:
+            printf("Enter a correct operator from above\n");
+            break;
+    }
+
+    return 0;
+}
