@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    int a, b, t;
+
+    // Get input from the user
+    printf("Enter first number: ");
+    scanf("%d", &a);
+    printf("Enter second number: ");
+    scanf("%d", &b);
+
+    // Swap the values
+    t = b; 
+    b = a; 
+    a = t; 
+
+    // Print the results
+    printf("First number is %d\n", a); 
+    printf("Second number is %d\n", b); 
+
+    return 0; 
+}
