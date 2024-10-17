@@ -1,0 +1,9 @@
+#include <stdio.h>
+//online compiler -rp
+int main() {
+    int n;
+    printf("Enter the number of elemets: ");
+    scanf("%d", &n);
+    printf("The number of elements is %d\n", n);
+    return 0;
+}
