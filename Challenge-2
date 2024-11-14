@@ -1,0 +1,28 @@
+// Category: Challenges
+// Question 2: Create a C program that simulates basic bank account operations such as deposit, withdrawal, and balance inquiry.
+#include <stdio.h>
+#include <string.h>
+struct BankAccount {
+    char name[50];
+    float balance;
+};
+void deposit(struct BankAccount *account, float amount) {
+    account->balance += amount;
+}
+void withdraw(struct BankAccount *account, float amount) {
+    if (account->balance >= amount)
+        account->balance -= amount;
+    else
+        printf("Insufficient balance\n");
+}
+void display_balance(struct BankAccount *account) {
+    printf("Balance: %.2f\n", account->balance);
+}
+int main() {
+    struct BankAccount account = {"John Doe", 1000.0};
+    deposit(&account, 500.0);
+    withdraw(&account, 200.0);
+    display_balance(&account);
+    return 0;
+}
+// RPX~PYCHUNK @ C
