@@ -1,0 +1,10 @@
+// Category: Miscellaneous
+// Question 9: Write a C program to calculate the sum of an arithmetic series.
+#include <stdio.h>
+int main() {
+    int a = 1, d = 2, n = 10;
+    int sum = (n / 2) * (2 * a + (n - 1) * d);
+    printf("Sum: %d", sum);
+    return 0;
+}
+// RPX~PYCHUNK @ C
