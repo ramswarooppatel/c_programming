@@ -1,0 +1,13 @@
+// Category: Structures and Unions
+// Question 1: Write a C program to define a structure and initialize its members.
+#include <stdio.h>
+struct Person {
+    char name[50];
+    int age;
+};
+int main() {
+    struct Person p = {"John", 25};
+    printf("Name: %s, Age: %d", p.name, p.age);
+    return 0;
+}
+// RPX~PYCHUNK @ C
