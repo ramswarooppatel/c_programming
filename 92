@@ -1,0 +1,13 @@
+// Category: Miscellaneous
+// Question 2: Write a C program to convert a decimal number to octal.
+#include <stdio.h>
+void decimal_to_octal(int n) {
+    if (n > 7) decimal_to_octal(n / 8);
+    printf("%d", n % 8);
+}
+int main() {
+    int n = 10;
+    decimal_to_octal(n);
+    return 0;
+}
+// RPX~PYCHUNK @ C
