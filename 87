@@ -1,0 +1,21 @@
+// Category: Advanced Concepts
+// Question 7: Write a C program to find the transpose of a matrix.
+#include <stdio.h>
+void transpose(int mat[2][2], int trans[2][2]) {
+    for (int i = 0; i < 2; i++)
+        for (int j = 0; j < 2; j++)
+            trans[j][i] = mat[i][j];
+}
+int main() {
+    int mat[2][2] = {{1, 2}, {3, 4}};
+    int trans[2][2];
+    transpose(mat, trans);
+    for (int i = 0; i < 2; i++) {
+        for (int j = 0; j < 2; j++) {
+            printf("%d ", trans[i][j]);
+        }
+        printf("\n");
+    }
+    return 0;
+}
+// RPX~PYCHUNK @ C
