@@ -1,0 +1,22 @@
+// Category: File Handling
+// Question 8: Write a C program to merge two files.
+#include <stdio.h>
+int main() {
+    FILE *file1 = fopen("file1.txt", "r");
+    FILE *file2 = fopen("file2.txt", "r");
+    FILE *output = fopen("merged.txt", "w");
+    if (file1 == NULL || file2 == NULL || output == NULL) {
+        printf("Could not open files\n");
+        return 1;
+    }
+    char ch;
+    while ((ch = fgetc(file1)) != EOF)
+        fputc(ch, output);
+    while ((ch = fgetc(file2)) != EOF)
+        fputc(ch, output);
+    fclose(file1);
+    fclose(file2);
+    fclose(output);
+    return 0;
+}
+// RPX~PYCHUNK @ C
