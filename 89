@@ -1,0 +1,27 @@
+// Category: Advanced Concepts
+// Question 9: Write a C program to find the inverse of a matrix.
+#include <stdio.h>
+#include <math.h>
+int inverse(int mat[2][2], float inv[2][2]) {
+    int det = mat[0][0] * mat[1][1] - mat[0][1] * mat[1][0];
+    if (det == 0) return 0; // No inverse
+    float inv_det = 1.0 / det;
+    inv[0][0] = mat[1][1] * inv_det;
+    inv[0][1] = -mat[0][1] * inv_det;
+    inv[1][0] = -mat[1][0] * inv_det;
+    inv[1][1] = mat[0][0] * inv_det;
+    return 1;
+}
+int main() {
+    int mat[2][2] = {{4, 7}, {2, 6}};
+    float inv[2][2];
+    if (inverse(mat, inv)) {
+        printf("Inverse:\n");
+        printf("%.2f %.2f\n", inv[0][0], inv[0][1]);
+        printf("%.2f %.2f\n", inv[1][0], inv[1][1]);
+    } else {
+        printf("Matrix has no inverse.");
+    }
+    return 0;
+}
+// RPX~PYCHUNK @ C
