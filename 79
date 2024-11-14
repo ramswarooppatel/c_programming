@@ -1,0 +1,11 @@
+// Category: File Handling
+// Question 9: Write a C program to delete a file.
+#include <stdio.h>
+int main() {
+    if (remove("file.txt") == 0)
+        printf("File deleted successfully");
+    else
+        printf("Unable to delete the file");
+    return 0;
+}
+// RPX~PYCHUNK @ C
