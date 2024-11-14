@@ -1,0 +1,12 @@
+// Category: Advanced Concepts
+// Question 8: Write a C program to find the determinant of a matrix.
+#include <stdio.h>
+int determinant(int mat[2][2]) {
+    return (mat[0][0] * mat[1][1] - mat[0][1] * mat[1][0]);
+}
+int main() {
+    int mat[2][2] = {{1, 2}, {3, 4}};
+    printf("Determinant: %d", determinant(mat));
+    return 0;
+}
+// RPX~PYCHUNK @ C
