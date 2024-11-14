@@ -1,0 +1,15 @@
+// Category: Functions
+// Question 5: Write a C program to reverse a number using recursion.
+#include <stdio.h>
+int reverse(int n) {
+    static int rev = 0;
+    if (n == 0) return rev;
+    rev = rev * 10 + n % 10;
+    return reverse(n / 10);
+}
+int main() {
+    int n = 1234;
+    printf("%d", reverse(n));
+    return 0;
+}
+// RPX~PYCHUNK @ C
