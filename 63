@@ -1,0 +1,20 @@
+// Category: Structures and Unions
+// Question 3: Write a C program to add two complex numbers using structures.
+#include <stdio.h>
+struct Complex {
+    float real;
+    float imag;
+};
+struct Complex add(struct Complex c1, struct Complex c2) {
+    struct Complex result;
+    result.real = c1.real + c2.real;
+    result.imag = c1.imag + c2.imag;
+    return result;
+}
+int main() {
+    struct Complex c1 = {3.5, 2.5}, c2 = {1.5, 3.5};
+    struct Complex result = add(c1, c2);
+    printf("Sum: %.2f + %.2fi", result.real, result.imag);
+    return 0;
+}
+// RPX~PYCHUNK @ C
