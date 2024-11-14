@@ -1,0 +1,14 @@
+// Category: Miscellaneous
+// Question 8: Write a C program to check if a number is a palindrome.
+#include <stdio.h>
+int main() {
+    int num = 121, reversed = 0, original = num;
+    while (num != 0) {
+        reversed = reversed * 10 + num % 10;
+        num /= 10;
+    }
+    if (original == reversed) printf("Palindrome");
+    else printf("Not Palindrome");
+    return 0;
+}
+// RPX~PYCHUNK @ C
