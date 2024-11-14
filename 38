@@ -1,0 +1,17 @@
+// Write a C program to find the frequency of characters in a string.
+//18
+#include <stdio.h>
+#include <string.h>
+int main() {
+    char str[] = "hello world";
+    int freq[256] = {0};
+    for (int i = 0; i < strlen(str); i++) {
+        freq[str[i]]++;
+    }
+    for (int i = 0; i < 256; i++) {
+        if (freq[i] > 0)
+            printf("%c occurs %d times\n", i, freq[i]);
+    }
+    return 0;
+}
+// RPX~PYCHUNK @ C
