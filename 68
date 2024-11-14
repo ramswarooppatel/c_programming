@@ -1,0 +1,19 @@
+// Category: Structures and Unions
+// Question 8: Write a C program to sort an array of structures.
+#include <stdio.h>
+#include <string.h>
+struct Person {
+    char name[50];
+    int age;
+};
+int compare(const void *a, const void *b) {
+    return ((struct Person *)a)->age - ((struct Person *)b)->age;
+}
+int main() {
+    struct Person people[3] = {{"John", 25}, {"Alice", 30}, {"Bob", 20}};
+    qsort(people, 3, sizeof(struct Person), compare);
+    for (int i = 0; i < 3; i++)
+        printf("%s, %d\n", people[i].name, people[i].age);
+    return 0;
+}
+// RPX~PYCHUNK @ C
