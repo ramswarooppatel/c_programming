@@ -10,16 +10,16 @@ This repository contains solutions to 100 C programming questions across various
 
 ## Categories
 The solutions are divided into the following categories:
-1. *Basic Concepts*
-2. *Control Structures*
-3. *Arrays and Strings*
-4. *Functions*
-5. *Pointers*
-6. *Structures and Unions*
-7. *File Handling*
-8. *Advanced Concepts*
-9. *Miscellaneous*
-10. *Challenges*
+1. **Basic Concepts**
+2. **Control Structures**
+3. **Arrays and Strings**
+4. **Functions**
+5. **Pointers**
+6. **Structures and Unions**
+7. **File Handling**
+8. **Advanced Concepts**
+9. **Miscellaneous**
+10. **Challenges**
 
 ## Questions List
 Below is the list of 100 C programming questions that have been solved in this repository:
@@ -144,16 +144,16 @@ Below is the list of 100 C programming questions that have been solved in this r
 
 ## How to Use
 1. Clone the repository using the command:
-bash``` git clone https://github.com/ramswarooppatel/c_programming.git ```
+``` git clone https://github.com/ramswarooppatel/c_programming.git ```
 2. Navigate to the directory containing the program files.
 3. Compile the C code using a C compiler:
-bash``` gcc <file_name.c> -o <output_name> ```
+``` gcc <file_name.c> -o <output_name> ```
 4. Run the compiled program:
 ./<output_name>
 
 
 ## License
-This repository is open-source but make sure to give credits ~PYCHUNK (_or_) ~ RPX and available under the MIT License.
+This repository is open-source but make sure to give credits ```~PYCHUNK``` (_or_) ~``RPX`` and available under the MIT License.
 
 ---
 
