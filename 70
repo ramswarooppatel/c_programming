@@ -1,0 +1,18 @@
+// Category: Structures and Unions
+// Question 10: Write a C program to demonstrate nested structures.
+#include <stdio.h>
+struct Date {
+    int day;
+    int month;
+    int year;
+};
+struct Person {
+    char name[50];
+    struct Date birthdate;
+};
+int main() {
+    struct Person p = {"John", {25, 12, 1995}};
+    printf("Name: %s\nBirthdate: %d/%d/%d", p.name, p.birthdate.day, p.birthdate.month, p.birthdate.year);
+    return 0;
+}
+// RPX~PYCHUNK @ C
