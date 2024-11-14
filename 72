@@ -1,0 +1,14 @@
+// Category: File Handling
+// Question 2: Write a C program to write to a text file.
+#include <stdio.h>
+int main() {
+    FILE *file = fopen("file.txt", "w");
+    if (file == NULL) {
+        printf("Could not open file\n");
+        return 1;
+    }
+    fprintf(file, "Hello, world!");
+    fclose(file);
+    return 0;
+}
+// RPX~PYCHUNK @ C
