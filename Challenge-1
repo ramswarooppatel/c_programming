@@ -1,0 +1,14 @@
+// Category: Challenges
+// Question 1: Write a C program to calculate the commission earned by a salesperson based on their sales amount.
+#include <stdio.h>
+float calculate_commission(float sales) {
+    if (sales < 1000) return sales * 0.05;
+    if (sales <= 5000) return sales * 0.10;
+    return sales * 0.20;
+}
+int main() {
+    float sales = 3000;
+    printf("Commission: %.2f", calculate_commission(sales));
+    return 0;
+}
+// RPX~PYCHUNK @ C
