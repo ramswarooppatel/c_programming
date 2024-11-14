@@ -1,0 +1,11 @@
+// Write a C program to find the length of a string without using the strlen function.
+//14
+#include <stdio.h>
+int main() {
+    char str[] = "Hello World!";
+    int length = 0;
+    while (str[length] != '\0') length++;
+    printf("%d", length);
+    return 0;
+}
+// RPX~PYCHUNK @ C
