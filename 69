@@ -1,0 +1,22 @@
+// Category: Structures and Unions
+// Question 9: Write a C program to read and display information of a student using structures and pointers.
+#include <stdio.h>
+struct Student {
+    char name[50];
+    int age;
+    float grade;
+};
+int main() {
+    struct Student s;
+    struct Student *ptr = &s;
+    printf("Enter name: ");
+    fgets(ptr->name, 50, stdin);
+    printf("Enter age: ");
+    scanf("%d", &ptr->age);
+    printf("Enter grade: ");
+    scanf("%f", &ptr->grade);
+    printf("Student Info:\n");
+    printf("Name: %sAge: %d\nGrade: %.2f", ptr->name, ptr->age, ptr->grade);
+    return 0;
+}
+// RPX~PYCHUNK @ C
