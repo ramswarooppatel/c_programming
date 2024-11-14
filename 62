@@ -1,0 +1,14 @@
+// Category: Structures and Unions
+// Question 2: Write a C program to store information of a student using structures.
+#include <stdio.h>
+struct Student {
+    char name[50];
+    int age;
+    float grade;
+};
+int main() {
+    struct Student s = {"Alice", 20, 90.5};
+    printf("Name: %s, Age: %d, Grade: %.2f", s.name, s.age, s.grade);
+    return 0;
+}
+// RPX~PYCHUNK @ C
