@@ -1,0 +1,18 @@
+// Category: Pointers
+// Question 5: Write a C program to find the length of a string using pointers.
+#include <stdio.h>
+#include <string.h>
+int string_length(char *str) {
+    int length = 0;
+    while (*str) {
+        length++;
+        str++;
+    }
+    return length;
+}
+int main() {
+    char str[] = "Hello";
+    printf("%d", string_length(str));
+    return 0;
+}
+// RPX~PYCHUNK @ C
