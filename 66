@@ -1,0 +1,12 @@
+// Category: Structures and Unions
+// Question 6: Write a C program to find the size of a structure.
+#include <stdio.h>
+struct Person {
+    char name[50];
+    int age;
+};
+int main() {
+    printf("Size of structure: %lu", sizeof(struct Person));
+    return 0;
+}
+// RPX~PYCHUNK @ C
