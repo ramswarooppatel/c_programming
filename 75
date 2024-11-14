@@ -1,0 +1,23 @@
+// Category: File Handling
+// Question 5: Write a C program to copy the contents of one file to another.
+#include <stdio.h>
+int main() {
+    FILE *source = fopen("source.txt", "r");
+    if (source == NULL) {
+        printf("Could not open source file\n");
+        return 1;
+    }
+    FILE *destination = fopen("destination.txt", "w");
+    if (destination == NULL) {
+        printf("Could not open destination file\n");
+        fclose(source);
+        return 1;
+    }
+    char ch;
+    while ((ch = fgetc(source)) != EOF)
+        fputc(ch, destination);
+    fclose(source);
+    fclose(destination);
+    return 0;
+}
+// RPX~PYCHUNK @ C
