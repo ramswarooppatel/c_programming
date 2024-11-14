@@ -1,0 +1,15 @@
+// Category: Functions
+// Question 7: Write a C program to find the LCM of two numbers using recursion.
+#include <stdio.h>
+int lcm(int a, int b) {
+    static int multiple = 0;
+    multiple += b;
+    if (multiple % a == 0) return multiple;
+    return lcm(a, b);
+}
+int main() {
+    int a = 4, b = 6;
+    printf("%d", lcm(a, b));
+    return 0;
+}
+// RPX~PYCHUNK @ C
