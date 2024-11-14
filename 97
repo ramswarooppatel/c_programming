@@ -1,0 +1,13 @@
+// Category: Miscellaneous
+// Question 7: Write a C program to find the HCF of two numbers using the Euclidean algorithm.
+#include <stdio.h>
+int hcf(int a, int b) {
+    if (b == 0) return a;
+    return hcf(b, a % b);
+}
+int main() {
+    int a = 56, b = 98;
+    printf("HCF: %d", hcf(a, b));
+    return 0;
+}
+// RPX~PYCHUNK @ C
